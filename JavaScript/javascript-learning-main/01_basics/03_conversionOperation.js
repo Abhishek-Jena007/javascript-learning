@@ -16,6 +16,25 @@ console.log(changeToBoolean)
 //when we convert different data types into boolean 
 //0 => false
 // any number other than 0 gives true
-// any string gives true
+// any non empty string gives true
 // null, undefined and "" gives false
 
+let isLoggedIn1 = "Abhisek"
+let changeToBoolean1 = Boolean (isLoggedIn1)
+console.log(isLoggedIn1)
+console.log(changeToBoolean1)
+// when we convert a string to boolean, it will always give true if the string is not empty
+// when we convert a number to boolean, it will give false if the number is 0, otherwise it will give true
+
+console.log(Boolean(0)) // false
+console.log(1 + 2 + "3") // 33
+console.log(1 + "2" + 3) // 123
+console.log("1" + 2 + 3) // 123
+console.log(1 + 2 + 3 + "4") // 64
+console.log(1 + 2 + "3" + 4) // 334
+console.log("1" + 2 + 3 + 4) // 1234
+console.log(1 + 2 + "3" + 4 + 5) // 3345
+// whenever the string comes, thereafter all are treated as sting concatination, before that its number addition
+
+//console.log(+true) //it convert the true to 1 but can't do the increment
+//console.log(+"") //similarly, gives 0
